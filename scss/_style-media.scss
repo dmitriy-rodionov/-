@@ -1,0 +1,62 @@
+@media(max-width: 1200px) {
+    .container{
+        width: 960px;
+    }
+}
+
+@media(max-width: 992px) {
+    .container{
+        width: 720px;
+    }
+}
+
+@media(max-width: 768px) {
+    .container{
+        width: 540px;
+    }
+}
+
+@media(max-width: 576px) {
+    .container{
+        width: 100%;
+    }
+    .main{
+        height: 750px;
+        &__header {
+            font-size: 25px;
+        }
+        &__table{
+            width: 310px;
+            height: 600px;
+        }
+        &__title{
+            grid-template-columns: 40px 110px 60px 100px;
+        }
+        &__currency{
+            grid-template-columns: 40px 110px 60px 100px;
+            &-code, &-name, &-amount, &-price{
+                font-size: 13px;
+            }
+        }
+    }
+    .converter{
+        width: 320px;
+        height: 350px;
+        flex-direction: column;
+        &__first{
+            align-items:center;
+            &-value{
+                width: 270px;
+            }
+        }
+        &__second{
+            align-items:center;
+            &-value{
+                width: 270px;
+            }
+        }
+        &__change{
+            margin: 0 auto;
+        }
+    }
+}

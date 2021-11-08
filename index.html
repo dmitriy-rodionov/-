@@ -11,122 +11,141 @@
     <title>Converter</title>
 </head>
 <body>
-    <section class="main">
-        <h1 class="main__header">Курсы валют ЦБ РФ</h1>
-        <div class="main__table">
-            <div class="main__title">
-                <div class="main__currency-code">Код</div>
-                <div>Валюта</div>
-                <div>Кол-во</div>
-                <div class="main__currency-price">Курс</div>
+    <div class="container">
+        <section class="main">
+            <h1 class="main__header">Курсы валют ЦБ РФ</h1>
+            <div class="main__table">
+                <div class="main__title">
+                    <div class="main__currency-code">Код</div>
+                    <div>Валюта</div>
+                    <div>Кол-во</div>
+                    <div class="main__currency-price">Курс</div>
+                </div>
+                <div class="main__currency">
+                    <div class="main__currency-code">USD</div>
+                    <div class="main__currency-name">Доллар США</div>
+                    <div class="main__currency-amount">1</div>
+                    <div class="main__currency-price usd-price"></div>
+                </div>
+                <div class="main__currency">
+                    <div class="main__currency-code">EUR</div>
+                    <div class="main__currency-name">ЕВРО</div>
+                    <div class="main__currency-amount">1</div>
+                    <div class="main__currency-price eur-price"></div>
+                </div>
+                <div class="main__currency">
+                    <div class="main__currency-code">GBP</div>
+                    <div class="main__currency-name"> Британский фунт стерлингов</div>
+                    <div class="main__currency-amount">1</div>
+                    <div class="main__currency-price gbp-price"></div>
+                </div>
+                <div class="main__currency">
+                    <div class="main__currency-code">CAD</div>
+                    <div class="main__currency-name">Канадский доллар</div>
+                    <div class="main__currency-amount">1</div>
+                    <div class="main__currency-price cad-price"></div>
+                </div>
+                <div class="main__currency">
+                    <div class="main__currency-code">CHF</div>
+                    <div class="main__currency-name">Швейцарский франк</div>
+                    <div class="main__currency-amount">1</div>
+                    <div class="main__currency-price chf-price"></div>
+                </div>
+                <div class="main__currency">
+                    <div class="main__currency-code">CZK</div>
+                    <div class="main__currency-name">Чешская крона</div>
+                    <div class="main__currency-amount">10</div>
+                    <div class="main__currency-price czk-price"></div>
+                </div>
+                <div class="main__currency">
+                    <div class="main__currency-code">PLN</div>
+                    <div class="main__currency-name">Польский злотый</div>
+                    <div class="main__currency-amount">1</div>
+                    <div class="main__currency-price pln-price"></div>
+                </div>
+                <div class="main__currency">
+                    <div class="main__currency-code">NOK</div>
+                    <div class="main__currency-name">Норвежская крона</div>
+                    <div class="main__currency-amount">10</div>
+                    <div class="main__currency-price nok-price"></div>
+                </div>
+                <div class="main__currency">
+                    <div class="main__currency-code">UAH</div>
+                    <div class="main__currency-name">Украинская гривна</div>
+                    <div class="main__currency-amount">10</div>
+                    <div class="main__currency-price uah-price"></div>
+                </div>
+                <div class="main__currency">
+                    <div class="main__currency-code">HUF</div>
+                    <div class="main__currency-name">Венгерский форинт</div>
+                    <div class="main__currency-amount">100</div>
+                    <div class="main__currency-price huf-price"></div>
+                </div>
+                <div class="main__currency">
+                    <div class="main__currency-code">DKK</div>
+                    <div class="main__currency-name">Датская крона</div>
+                    <div class="main__currency-amount">1</div>
+                    <div class="main__currency-price dkk-price"></div>
+                </div>
+                <div class="main__currency">
+                    <div class="main__currency-code">BYN</div>
+                    <div class="main__currency-name">Белорусский рубль</div>
+                    <div class="main__currency-amount">1</div>
+                    <div class="main__currency-price byn-price"></div>
+                </div>
+                <div class="main__currency">
+                    <div class="main__currency-code">SEK</div>
+                    <div class="main__currency-name">Шведская крона</div>
+                    <div class="main__currency-amount">10</div>
+                    <div class="main__currency-price sek-price"></div>
+                </div>
             </div>
-            <div class="main__currency">
-                <div class="main__currency-code">USD</div>
-                <div class="main__currency-name">Доллар США</div>
-                <div class="main__currency-amount">1</div>
-                <div class="main__currency-price usd-price"></div>
+        </section>
+        <section class="converter">
+            <div class="converter__first">
+                <div class="converter__first-code">RUR</div>
+                <div class="converter__first-menu">
+                    <div class="converter__first-menu-item">USD</div>
+                    <div class="converter__first-menu-item">EUR</div>
+                    <div class="converter__first-menu-item">GBP</div>
+                    <div class="converter__first-menu-item">CAD</div>
+                    <div class="converter__first-menu-item">CHF</div>
+                    <div class="converter__first-menu-item">CZK</div>
+                    <div class="converter__first-menu-item">PLN</div>
+                    <div class="converter__first-menu-item">NOK</div>
+                    <div class="converter__first-menu-item">UAH</div>
+                    <div class="converter__first-menu-item">HUF</div>
+                    <div class="converter__first-menu-item">DKK</div>
+                    <div class="converter__first-menu-item">BYN</div>
+                    <div class="converter__first-menu-item">SEK</div>
+                    <div class="converter__first-menu-item">RUR</div>
+                </div>
+                <input type="text" class="converter__first-value">
             </div>
-            <div class="main__currency">
-                <div class="main__currency-code">EUR</div>
-                <div class="main__currency-name">ЕВРО</div>
-                <div class="main__currency-amount">1</div>
-                <div class="main__currency-price eur-price"></div>
+            <img src="icons/twocirclingarrows_120593.svg" alt="change" class="converter__change">
+            <div class="converter__second">
+                <div class="converter__second-code">USD</div>
+                <div class="converter__second-menu">
+                    <div class="converter__second-menu-item">USD</div>
+                    <div class="converter__second-menu-item">EUR</div>
+                    <div class="converter__second-menu-item">GBP</div>
+                    <div class="converter__second-menu-item">CAD</div>
+                    <div class="converter__second-menu-item">CHF</div>
+                    <div class="converter__second-menu-item">CZK</div>
+                    <div class="converter__second-menu-item">PLN</div>
+                    <div class="converter__second-menu-item">NOK</div>
+                    <div class="converter__second-menu-item">UAH</div>
+                    <div class="converter__second-menu-item">HUF</div>
+                    <div class="converter__second-menu-item">DKK</div>
+                    <div class="converter__second-menu-item">BYN</div>
+                    <div class="converter__second-menu-item">SEK</div>
+                    <div class="converter__second-menu-item">RUR</div>
+                </div>
+                <input type="text" class="converter__second-value">
             </div>
-            <div class="main__currency">
-                <div class="main__currency-code">GBP</div>
-                <div class="main__currency-name"> Британский фунт стерлингов</div>
-                <div class="main__currency-amount">1</div>
-                <div class="main__currency-price gbp-price"></div>
-            </div>
-            <div class="main__currency">
-                <div class="main__currency-code">CAD</div>
-                <div class="main__currency-name">Канадский доллар</div>
-                <div class="main__currency-amount">1</div>
-                <div class="main__currency-price cad-price"></div>
-            </div>
-            <div class="main__currency">
-                <div class="main__currency-code">CHF</div>
-                <div class="main__currency-name">Швейцарский франк</div>
-                <div class="main__currency-amount">1</div>
-                <div class="main__currency-price chf-price"></div>
-            </div>
-            <div class="main__currency">
-                <div class="main__currency-code">CZK</div>
-                <div class="main__currency-name">Чешская крона</div>
-                <div class="main__currency-amount">10</div>
-                <div class="main__currency-price czk-price"></div>
-            </div>
-            <div class="main__currency">
-                <div class="main__currency-code">PLN</div>
-                <div class="main__currency-name">Польский злотый</div>
-                <div class="main__currency-amount">1</div>
-                <div class="main__currency-price pln-price"></div>
-            </div>
-            <div class="main__currency">
-                <div class="main__currency-code">NOK</div>
-                <div class="main__currency-name">Норвежская крона</div>
-                <div class="main__currency-amount">10</div>
-                <div class="main__currency-price nok-price"></div>
-            </div>
-            <div class="main__currency">
-                <div class="main__currency-code">UAH</div>
-                <div class="main__currency-name">Украинская гривна</div>
-                <div class="main__currency-amount">10</div>
-                <div class="main__currency-price uah-price"></div>
-            </div>
-            <div class="main__currency">
-                <div class="main__currency-code">HUF</div>
-                <div class="main__currency-name">Венгерский форинт</div>
-                <div class="main__currency-amount">100</div>
-                <div class="main__currency-price huf-price"></div>
-            </div>
-            <div class="main__currency">
-                <div class="main__currency-code">DKK</div>
-                <div class="main__currency-name">Датская крона</div>
-                <div class="main__currency-amount">1</div>
-                <div class="main__currency-price dkk-price"></div>
-            </div>
-            <div class="main__currency">
-                <div class="main__currency-code">BYN</div>
-                <div class="main__currency-name">Белорусский рубль</div>
-                <div class="main__currency-amount">1</div>
-                <div class="main__currency-price byn-price"></div>
-            </div>
-            <div class="main__currency">
-                <div class="main__currency-code">SEK</div>
-                <div class="main__currency-name">Шведская крона</div>
-                <div class="main__currency-amount">10</div>
-                <div class="main__currency-price sek-price"></div>
-            </div>
-        </div>
-    </section>
-    <section class="converter">
-        <div class="converter__first">
-            <div class="converter__first-code">RUR</div>
-            <div class="converter__first-menu">
-                <div class="converter__first-menu-item">USD</div>
-                <div class="converter__first-menu-item">EUR</div>
-                <div class="converter__first-menu-item">GBP</div>
-                <div class="converter__first-menu-item">CAD</div>
-                <div class="converter__first-menu-item">CHF</div>
-                <div class="converter__first-menu-item">CZK</div>
-                <div class="converter__first-menu-item">PLN</div>
-                <div class="converter__first-menu-item">NOK</div>
-                <div class="converter__first-menu-item">UAH</div>
-                <div class="converter__first-menu-item">HUF</div>
-                <div class="converter__first-menu-item">DKK</div>
-                <div class="converter__first-menu-item">BYN</div>
-                <div class="converter__first-menu-item">SEK</div>
-                <div class="converter__first-menu-item">RUR</div>
-            </div>
-            <input type="text" class="converter__first-value">
-        </div>
-        <div class="converter__second">
-            <div class="converter__second-code">USD</div>
-            <input type="text" class="converter__second-value">
-        </div>
-    </section>
-    <footer class="footer"><a href="https://www.cbr-xml-daily.ru/">Курсы ЦБ РФ в XML и JSON, API</a></footer>
+        </section>
+        <footer class="footer"><a href="https://www.cbr-xml-daily.ru/">Курсы ЦБ РФ в XML и JSON, API</a></footer>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>

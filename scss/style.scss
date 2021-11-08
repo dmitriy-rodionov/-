@@ -7,8 +7,12 @@
 body{
     background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
 }
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
 .main{
-    width: 100%;
+    // width: 100%;
     height: 950px;
     padding-top: 100px;
     &__header{
@@ -52,16 +56,45 @@ body{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    &__change{
+        width: 30px;
+        height: 30px;
+        margin-top: 55px;
+    }
     &__first{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         position: relative;
     }
+    &__second{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
     &__first-menu{
         position: absolute;
         top: 23px;
         right: 0;
+        width: 50px;
+        background: #fff;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0px 0px 3px 3px;
+        &-item{
+            margin-top: 5px;
+            cursor: pointer;
+            &:hover{
+                color: lightskyblue;
+            }
+        }
+    }
+    &__second-menu{
+        position: absolute;
+        top: 23px;
+        left: 0;
         width: 50px;
         background: #fff;
         display: none;
@@ -117,3 +150,5 @@ body{
         color: honeydew;
     }
 }
+
+@import 'style-media';
